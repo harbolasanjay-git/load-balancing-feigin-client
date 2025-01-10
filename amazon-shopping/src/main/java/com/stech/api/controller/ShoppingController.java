@@ -15,6 +15,7 @@ public class ShoppingController {
 
 	@GetMapping("/getPayment")
 	public String paymentStatus() {
+		System.out.println("This is load balancing demo using feing client and eureka!!");
 		return paymentClient.getPaymentStatus();
 	}
 }
